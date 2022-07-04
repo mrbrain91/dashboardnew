@@ -1,0 +1,289 @@
+// template
+// @media (max-width: 1439px) {
+//     .sidepanel {
+//         display: none;
+//     }
+// }
+// @media (max-width: 1200px) {
+//     .container {
+//         max-width: 960px;
+//     }
+//     .about {
+//         &__wrapper {
+//             grid-template-columns: 400px 520px;
+//             column-gap: 40px;
+//         }
+//         &__skills {
+//             column-gap: 20px;
+//             grid-template: repeat(2, minmax(115px, auto))/repeat(2, 250px);
+//             &-item {
+//                 grid-template-columns: 40px 195px;
+//                 column-gap: 15px;
+//             }
+//         }
+//     }
+//     .resume {
+//         &__wrapper {
+//             padding: 60px 25px 0 25px;
+//             grid-template-columns: repeat(2, 400px);
+//             column-gap: 100px;
+//         }
+//     }
+//     .experience {
+//         &__wrapper {
+//             justify-content: space-between;
+//             grid-template-columns: repeat(3, 270px);
+//             row-gap: 5px;
+//         }
+//         &__degree {
+//             grid-template-columns: repeat(2, 350px);
+//             justify-content: space-between;
+//         }
+//     }
+//     .portfolio {
+//         &__wrapper {
+//             grid-template-columns: repeat(auto-fit, 280px);
+//             grid-auto-rows: 280px;
+//             justify-content: space-between;
+//             row-gap: 35px;
+//             .horizontal,
+//             .vertical {
+//                 grid-row: unset;
+//                 grid-column: unset;
+//             }
+//         }
+//     }
+//     .contacts {
+//         padding-top: 100px;
+//         &__wrapper {
+//             padding: 0;
+//             grid-template-columns: 370px 550px;
+//         }
+//         &__form {
+//             grid-template: 45px 190px 45px/repeat(2, 230px);
+//         }
+//     }
+// }
+// @media (max-width: 992px) {
+//     .container {
+//         max-width: 720px;
+//     }
+//     .title {
+//         &_fz36 {
+//             font-size: 30px;
+//         }
+//     }
+//     .about {
+//         &__wrapper {
+//             grid-template-columns: 300px 380px;
+//         }
+//         &__skills {
+//             grid-template-columns: 380px;
+//             grid-auto-rows: minmax(115px, auto);
+//             &-item {
+//                 grid-template-columns: 40px 320px;
+//                 column-gap: 20px;
+//             }
+//         }
+//     }
+//     .resume {
+//         &__wrapper {
+//             padding: 60px 25px 0 25px;
+//             grid-template-columns: repeat(2, 310px);
+//             column-gap: 50px;
+//         }
+//     }
+//     .experience {
+//         &__wrapper {
+//             grid-template-columns: repeat(2, 330px);
+//             justify-content: space-between;
+//         }
+//         &__degree {
+//             padding-top: 50px;
+//             grid-template-columns: repeat(2, 300px);
+//             justify-content: space-between;
+//         }
+//     }
+//     .price {
+//         &__wrapper {
+//             grid-template-columns: repeat(auto-fit, 350px);
+//             padding: 0;
+//         }
+//     }
+//     .contacts {
+//         padding-top: 100px;
+//         &__wrapper {
+//             grid-template-columns: 1fr;
+//         }
+//         &__photo {
+//             display: none;
+//         }
+//     }
+// }
+// @media (max-width: 768px) {
+//     .container {
+//         max-width: 540px;
+//     }
+//     .title {
+//         &_fz48 {
+//             font-size: 28px;
+//         }
+//     }
+//     .promo {
+//         &__title {
+//             line-height: 39px;
+//             width: 300px;
+//         }
+//     }
+//     .about {
+//         padding-top: 40px;
+//         &__wrapper {
+//             grid-template: 400px auto auto / 1fr;
+//         }
+//         &__photo {
+//             grid-row: unset;
+//         }
+//         &__skills {
+//             grid-template-columns: repeat(2, 260px);
+//             &-item {
+//                 grid-template-columns: 40px 200px;
+//                 column-gap: 20px;
+//             }
+//         }
+//     }
+//     .resume {
+//         &__wrapper {
+//             padding: 60px 2px 0 2px;
+//             grid-template-columns: repeat(2, 260px);
+//             column-gap: 10px;
+//         }
+//         .title {
+//             &_fz14 {
+//                 font-size: 13px;
+//             }
+//         }
+//         &__item {
+//             &-head {
+//                 padding: 45px 0 0 97px;
+//             }
+//             &-location {
+//                 font-size: 11px;
+//             }
+//             &-body {
+//                 font-size: 11px;
+//             }
+//         }
+//     }
+//     .experience {
+//         &__wrapper {
+//             grid-template-columns: repeat(2, 250px);
+//             justify-content: space-between;
+//         }
+//         &__degree {
+//             padding-top: 50px;
+//             grid-template-columns: repeat(2, 240px);
+//             justify-content: space-between;
+//         }
+//     }
+//     .portfolio {
+//         padding-top: 40px;
+//         &__wrapper {
+//             justify-content: center;
+//         }
+//     }
+//     .price {
+//         padding-top: 40px;
+//         &__wrapper {
+//             margin-top: 30px;
+//             justify-content: center;
+//         }
+//     }
+// }
+// @media (max-width: 576px) {
+//     .container {
+//         width: 100%;
+//         padding: 0 10px;
+//     }
+//     .title {
+//         &_fz48 {
+//             font-size: 26px;
+//         }
+//         &_fz36 {
+//             font-size: 24px;
+//         }
+//     }
+//     .hamburger {
+//         right: 20px;
+//     }
+//     .menu {
+//         &__block {
+//             width: 250px;
+//             padding-left: 20px;
+//         }
+//     }
+//     .promo {
+//         background: url('../img/main__bg.jpeg') no-repeat 57%/cover;
+//         &__btns {
+//             margin-top: 30px;
+//         }
+//     }
+//     .about {
+//         &__wrapper {
+//             grid-template: 340px auto auto / 1fr;
+//         }
+//         &__skills {
+//             grid-template-columns: 1fr;
+//         }
+//     }
+//     .resume {
+//         padding-top: 40px;
+//         &__wrapper {
+//             padding: 60px 2px 0 2px;
+//             grid-template-columns: 260px;
+//             row-gap: 40px;
+//         }
+//     }
+//     .experience {
+//         padding-top: 0;
+//         .title {
+//             &_fz36 {
+//                 line-height: 36px;
+//             }
+//         }
+//         &__wrapper {
+//             padding-top: 20px;
+//             grid-template-columns: repeat(1, 1fr);
+//             justify-content: center;
+//         }
+//         &__degree {
+//             padding-top: 40px;
+//             grid-template-columns: repeat(1, 1fr);
+//             justify-content: center;
+//         }
+//     }
+//     .contacts {
+//         &__form {
+//             grid-template: 45px 45px 190px 45px/ auto;
+//             grid-auto-rows: minmax(45px, auto);
+//         }
+//         &__textarea {
+//             grid-column: unset;
+//         }
+//         &__triggers {
+//             grid-template-columns: unset;
+//             grid-template-rows: repeat(2, auto);
+//             grid-column: unset;
+//             justify-content: center;
+//             row-gap: 20px;
+//         }
+//         &__btn {
+//             grid-row-start: 2;
+//             grid-row-end: 3;
+//         }
+//         &__policy {
+//             justify-self: center;
+//             grid-row-start: 1;
+//             grid-row-end: 2;
+//         }
+//     }
+// }
