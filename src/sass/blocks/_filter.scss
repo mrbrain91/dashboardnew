@@ -1,0 +1,83 @@
+.filter {
+    position: absolute;
+    right: 0;
+    display: flex;
+    gap: 9px;
+    margin-top: 3px;
+    &__select {
+        width: 85px;
+        height: 10px;
+        background: #FFFFFF;
+        border: 0.444444px solid #E8EAED;
+        box-shadow: 0px 1.33333px 1.77778px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 7px;
+        text-transform: uppercase;
+        color: #9EA9C2;
+        padding-left: 16px;
+    }
+    &__date {
+        width: 85px;
+        height: 10px;
+        background: #FFFFFF;
+        border: 0.444444px solid #E8EAED;
+        box-shadow: 0px 1.33333px 1.77778px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 7px;
+        text-transform: uppercase;
+        color: #9EA9C2;
+        padding-left: 7px;
+    }
+
+    &__clear {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 3px 0 8px;
+        width: 75px;
+        height: 10px;
+
+        background: #0F53B9;
+        border: 0.444444px solid #0F53B9;
+        box-shadow: 0px 1.33333px 1.77778px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 7px;
+        line-height: 8px;
+        /* or 114% */
+
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+    }
+
+    &__search {
+        width: 85px;
+        height: 10px;
+        background: #FFFFFF;
+        border: 0.444444px solid #E8EAED;
+        box-shadow: 0px 1.33333px 1.77778px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 7px;
+        text-transform: uppercase;
+        color: #9EA9C2;
+        padding-left: 16px;
+        // background: url('../../icons/filter/search.svg') no-repeat 50% 50%;
+    }
+
+
+}

@@ -1,20 +1,37 @@
 @import 'libs/bootstrap-reboot.min';
 //---------------------------add goole fonts-------------------------------------------------
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
 @import 'base/variables';
 @import 'base/mixins';
 * {
-    // font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
     // transition: all 0.6s;
 }
 
-// .container {
-//     width: 1140px;
-//     margin: 0 auto;
-// }
+.container {
+    display: flex;
+    position: relative;
+    max-width: 1018px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+body {
+    background-color: #ECF6FF;
+}
+
 @import 'blocks/title';
-@import 'blocks/button';
+@import 'blocks/leftbar';
 @import 'blocks/menu';
-@import 'blocks/media';
+@import 'blocks/header';
+@import 'blocks/filter';
+@import 'blocks/maincards';
+
+
+// @import 'blocks/title';
+// @import 'blocks/button';
+// @import 'blocks/media';

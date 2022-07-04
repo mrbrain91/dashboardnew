@@ -1,0 +1,14 @@
+.header {
+    width: 972px;
+    height: 40px;
+    display: flex;
+    margin-top: 1px;
+    align-items: center;
+    background: linear-gradient(90.07deg, #00FEDF 10.57%, #0038FF 61.37%, #0007AB 89.67%);
+    padding: 4px 0 4px 22px;
+    &__img {
+        width: 32px;
+        height: 32px;
+        margin-right: 12px;
+    }
+}
