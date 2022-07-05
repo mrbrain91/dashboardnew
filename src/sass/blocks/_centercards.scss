@@ -1,0 +1,104 @@
+.centercards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 100%;
+    height: 246px;
+    &__registration {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 189px;
+        height: 246px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 5px rgba(47, 103, 245, 0.1);
+        border-radius: 3px;
+        &-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 157px;
+            height: 18px;
+            background: linear-gradient(270.2deg, #0008CB 24.29%, #0085FF 73.8%);
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 8px;    
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 1;
+            &-2 {
+                font-size: 7px;
+                width: 155px;
+            }
+            &-3 {
+                font-size: 7px;
+                width: 162px;
+            }
+        }
+        &-subtitle {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 15px;
+            text-transform: uppercase;
+            background: linear-gradient(96.41deg, #4276FC 41.53%, #002A97 68.41%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-top: 23px;
+            &-2 {
+                margin-top: 15px;
+            }
+        }
+        &-img {
+            margin-top: 16px;
+            height: 52px;
+            width: 52px;
+        }
+        &-count {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 25px;
+            text-transform: uppercase;
+            line-height: 1
+            ;
+
+            background: linear-gradient(174.85deg, #4276FC 33.54%, #002A97 79.61%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            &-2 {
+                margin-top: 6px;
+            }
+            
+        }
+        &-arrow {
+            cursor: pointer;
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            right: 2px;
+            bottom: 2px;
+            border-radius: 100%;
+
+            background: #FFFFFF;
+            border: 1px solid #8DA2CB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 50%;
+            }
+        }
+    }
+    &__two {
+        display: flex;
+    }
+}
