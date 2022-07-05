@@ -98,6 +98,79 @@
             }
         }
     }
+    &__foreign {
+        width: 381px;
+        height: 246px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 5px rgba(47, 103, 245, 0.1);
+        border-radius: 3px;
+        &-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 359px;
+            height: 18px;
+            background: linear-gradient(270.2deg, #0008CB 24.29%, #0085FF 73.8%);
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 10px;    
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 1;
+        }
+    }
+    &__byarea {
+        position: relative;
+        width: 393px;
+        height: 246px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 5px rgba(47, 103, 245, 0.1);
+        border-radius: 3px;
+        &-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 176px;
+            height: 12px;
+            background: linear-gradient(270.2deg, #0008CB 24.29%, #0085FF 73.8%);
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 10px;    
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 1;
+        }
+        &-hamburger {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 7px;
+            height: 5px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+
+            span {
+                display: block;
+                width: 7px;
+                height: 1px;
+                background: #1B24FF;
+                border-radius: 3px;
+            }
+        }
+    }
     &__two {
         display: flex;
     }
