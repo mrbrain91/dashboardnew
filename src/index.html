@@ -139,9 +139,26 @@
                 </div>
                 <div class="centercards__foreign">
                     <div class="centercards__foreign-title">chet el fuqarolari va fuqaroligi bo’lmagan shaxslar</div>
+                    <div class="centercards__foreign-hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="centercards__foreign-text">ro'yhatdan o'tgan</div>
+                    <div class="centercards__foreign-total">357 316</div>
+                    <img src="icons/centercards/foreign.svg" alt="foreign" class="centercards__foreign-img">
+                    <div class="centercards__foreign-chart">
+                        <canvas id="myChart3"></canvas>
+                    </div>
+                    <div class="centercards__foreign-descr1">
+                        Vaqtincha
+                    </div>
+                    <div class="centercards__foreign-descr2">
+                        Doimiy
+                    </div>
                 </div>
                 <div class="centercards__byarea">
-                    <div class="centercards__byarea-title">hududlar bo’yicha</div>
+                    <div class="centercards__byarea-title">hududlar bo'yicha</div>
                     <div class="centercards__byarea-hamburger">
                         <span></span>
                         <span></span>
@@ -197,13 +214,40 @@
                    
                 </div>
                 <div class="bottomcards__mapuz">
-                    <div class="bottomcards__mapuz-title"></div>
+                    <div class="bottomcards__mapuz-title">ma’lumotlarni yig’ish punktlari</div>
+                    <div class="bottomcards__mapuz-hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="bottomcards__mapuz-gr">
+                        <div class="map" id="map"></div>    
+                        <div class="bottomcards__mapuz-block"></div>
+                        <div class="bottomcards__mapuz-block bottomcards__mapuz-block-2"></div>
+                        <ul class="bottomcards__mapuz-list">
+                            <li class="bottomcards__mapuz-list-item">bektemir tumani iib</li>
+                            <li class="bottomcards__mapuz-list-item">toshkent shahar iibb</li>
+                            <li class="bottomcards__mapuz-list-item">mirzo ulug’bek tumani iib</li>
+                            <li class="bottomcards__mapuz-list-item">mirobod tumani iib</li>
+                            <li class="bottomcards__mapuz-list-item">olmazor tumani iib</li>
+                            <li class="bottomcards__mapuz-list-item">sirg’ali tumani iib</li>
+                            <li class="bottomcards__mapuz-list-item">uchtepa tumani iib</li>
+                            <li class="bottomcards__mapuz-list-item">chilonzor tumani iib</li>
+                            <li class="bottomcards__mapuz-list-item">shayxontohur tumani iib</li>
+                            <li class="bottomcards__mapuz-list-item">yunusobod tumani iib</li>
+                            <li class="bottomcards__mapuz-list-item">yakkasaroy tumani iib</li>
+                            <li class="bottomcards__mapuz-list-item">yashnobod tumani iib</li>
+                            <li class="bottomcards__mapuz-list-item">yangi hayot tumani iib</li>
+                        </ul>
+                    </div>
                 </div>
                 
             </div>
             
         </div>
     </div>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
     <script src="js/script.js"></script>

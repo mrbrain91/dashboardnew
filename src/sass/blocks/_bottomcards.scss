@@ -248,12 +248,15 @@
         background: #FFFFFF;
         box-shadow: 0px 1px 5px rgba(47, 103, 245, 0.1);
         border-radius: 3px;
+        &-gr {
+            display: flex;
+        }
         &-title {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0 auto;
-            width: 176px;
+            width: 366px;
             height: 12px;
             background: linear-gradient(270.2deg, #0008CB 24.29%, #0085FF 73.8%);
             border-bottom-left-radius: 7px;
@@ -287,6 +290,44 @@
                 border-radius: 3px;
             }
         }
+        &-block {
+            position: absolute;
+            bottom: 0;
+            left: 72px;
+            width: 121px;
+            height: 39px;
+            background-color: #ffffff;
+            // &-2 {
+            //     top: 20px;
+            //     left: 161px;
+            //     width: 39px;
+            //     height: 39px;
+            // }
+        }
+        &-list {
+            margin-top: 10px;
+            list-style-type: none;
+            &-item {
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 8px;
+                line-height: 12px;
+                color: #023AE9;
+                text-transform: uppercase;
+            }
+        }
     }
+}
+
+
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+
+.map {
+    width: 200px;
+    height: 170px;
 }
 
