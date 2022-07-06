@@ -1,0 +1,292 @@
+.bottomcards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 100%;
+    height: 184px;
+    &__back {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 189px;
+        height: 184px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 5px rgba(47, 103, 245, 0.1);
+        border-radius: 3px;
+        &-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 157px;
+            height: 34px;
+            background: linear-gradient(270.2deg, #0008CB 24.29%, #0085FF 73.8%);
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 8px;    
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 1;
+        }
+        &-subtitle {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 10px;
+            text-transform: uppercase;
+            background: linear-gradient(96.41deg, #4276FC 41.53%, #002A97 68.41%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-top: 10px;
+        }
+        &-img {
+            margin-top: 16px;
+            height: 64px;
+            width: 68px;
+        }
+        &-count {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 30px;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-top: 12.5px;
+
+            background: linear-gradient(174.85deg, #4276FC 33.54%, #002A97 79.61%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            
+        }
+        &-hamburger {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 7px;
+            height: 5px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+
+            span {
+                display: block;
+                width: 7px;
+                height: 1px;
+                background: #1B24FF;
+                border-radius: 3px;
+            }
+        }
+        &-arrow {
+            cursor: pointer;
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            right: 2px;
+            bottom: 2px;
+            border-radius: 100%;
+
+            background: #FFFFFF;
+            border: 1px solid #8DA2CB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 50%;
+            }
+        }
+    }
+    &__detectedoffense {
+        position: relative;
+        width: 381px;
+        height: 184px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 5px rgba(47, 103, 245, 0.1);
+        border-radius: 3px;
+        &-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 308px;
+            height: 12px;
+            background: linear-gradient(270.2deg, #0008CB 24.29%, #0085FF 73.8%);
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 10px;    
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 1;
+        }
+        &-hamburger {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 7px;
+            height: 5px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+
+            span {
+                display: block;
+                width: 7px;
+                height: 1px;
+                background: #1B24FF;
+                border-radius: 3px;
+            }
+        }
+        &-chart {
+            display: flex;
+            padding: 5px;
+            &-1 {
+                width: 40%;
+                height: 100%;
+                &-text {
+                    margin-top: 47px;
+                    display: flex;
+                    &-line {
+                        content: "";
+                        display: inline-block;
+                        width: 16px;
+                        height: 3px;
+                        background: #2570D6;
+                        border-radius: 2px;
+                        margin-right: 5px;
+                        margin-top: 10px;
+                    }
+                   span {
+                        font-family: 'Montserrat';
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 14px;
+
+                        background: linear-gradient(96.41deg, #4276FC 41.53%, #002A97 68.41%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                    span {
+                        display: block;
+                        text-align: center;
+                        font-family: 'Montserrat';
+                        font-weight: 700;
+                        font-size: 12px;
+
+                        background: linear-gradient(96.41deg, #4276FC 41.53%, #002A97 68.41%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                    }  
+                   }
+
+                }
+                &-text2 {
+                    margin-top: 9px;
+                    display: flex;
+                    &-line {
+                        content: "";
+                        display: inline-block;
+                        width: 16px;
+                        height: 3px;
+                        background: #2FBD2C;
+                        border-radius: 2px;
+                        margin-right: 5px;
+                        margin-top: 10px;
+                    }
+                   span {
+                        font-family: 'Montserrat';
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 14px;
+
+                        background: linear-gradient(96.41deg, #4276FC 41.53%, #002A97 68.41%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                    span {
+                        display: block;
+                        text-align: center;
+                        font-family: 'Montserrat';
+                        font-weight: 700;
+                        font-size: 12px;
+
+                        background: linear-gradient(96.41deg, #4276FC 41.53%, #002A97 68.41%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                    }  
+                   }
+
+                }
+            }
+            &-2 {
+                
+                width: 60%;
+                height: 170px;
+
+            }
+        }
+    }
+    &__mapuz {
+        position: relative;
+        width: 393px;
+        height: 184px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 5px rgba(47, 103, 245, 0.1);
+        border-radius: 3px;
+        &-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 176px;
+            height: 12px;
+            background: linear-gradient(270.2deg, #0008CB 24.29%, #0085FF 73.8%);
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 10px;    
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 1;
+        }
+        &-hamburger {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 7px;
+            height: 5px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+
+            span {
+                display: block;
+                width: 7px;
+                height: 1px;
+                background: #1B24FF;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
