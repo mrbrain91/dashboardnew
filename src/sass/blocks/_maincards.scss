@@ -81,8 +81,29 @@
                 width: 50%;
             }
         }
+        &-active {
+            background: linear-gradient(99.63deg, #0FFFB7 18.69%, #1364FF 87.98%);
+            box-shadow: 0px 1px 5px rgba(47, 103, 245, 0.1);
+            border-radius: 3px;
+            .maincards-id-img {
+                height: 30.198368072509766px;
+                width: 44px;
+            }
+            .maincards__id-count {
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 25px;
+                text-transform: uppercase;
+                background: linear-gradient(174.85deg, #FFFFFF 33.54%, #FFFFFF 79.61%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+        }
     }
     &__two {
         display: flex;
     }
+    
 }
