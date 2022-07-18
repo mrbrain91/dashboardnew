@@ -20,14 +20,14 @@
             </div>
             <div class="leftbar__divider"></div>
             <ul class="menu">
-                <li class="menu__item active"><img src="icons/leftbar/report.svg" alt="report"></li>
+                <li class="menu__item"><a href="index.html"><img src="icons/leftbar/report.svg" alt="report"></a></li>
                 <li class="menu__item"><a href="id.html"><img src="icons/leftbar/idcard.svg" alt="idcard"></a></li>
                 <li class="menu__item"><a href="foreign.html"><img src="icons/leftbar/passport.svg" alt="passport"></a></li>
                 <a href="accrem.html">
                     <li class="menu__item "><img src="icons/leftbar/citizen-in.svg" alt="citizen-in"></li>
                     <li class="menu__item"><img src="icons/leftbar/citizen-out.svg" alt="citizen-out"></li>
                 </a>
-                <li class="menu__item"><a href="reg.html"><img src="icons/leftbar/letter.svg" alt="letter"></a></li>
+                <li class="menu__item active"><a href="reg.html"><img src="icons/leftbar/letter.svg" alt="letter"></a></li>
                 <li class="menu__item"><img src="icons/leftbar/qr.svg" alt="qr"></li>
                 <li class="menu__item"><img src="icons/leftbar/mans.svg" alt="mans"></li>
                 <li class="menu__item"><img src="icons/leftbar/identify.svg" alt="identify"></li>
@@ -123,43 +123,32 @@
                 </div>
             </div>
             <div class="centercards">
-                <div class="centercards__registration">
-                    <div class="centercards__registration-title"> yashash joyi bo’yicha<br> ro’yhatga olinganlar</div>
-                    <div class="centercards__registration-subtitle">
+                <div class="centercards__reg centercards__reg-active">
+                    <div class="centercards__reg-title"> yashash joyi bo’yicha<br> ro’yhatga olinganlar</div>
+                    <div class="centercards__reg-subtitle">
                         doimiy
                     </div>
-                    <div class="centercards__registration-count">
+                    <div class="centercards__reg-count">
                         201 030
                     </div>
-                    <img src="icons/centercards/qr.svg" alt="qr" class="centercards__registration-img">
-                    <div class="centercards__registration-subtitle centercards__registration-subtitle-2">
+                    <img src="icons/centercards/qr-white.svg" alt="qr" class="centercards__reg-img">
+                    <div class="centercards__reg-subtitle centercards__reg-subtitle-2">
                         vaqtincha
                     </div>
-                    <div class="centercards__registration-count centercards__registration-count-2">
+                    <div class="centercards__reg-count centercards__reg-count-2">
                         85 394
                     </div>
                 </div>
-                <div class="centercards__foreign">
+                <div class="centercards__foreign centercards__foreign-2">
                     <div class="centercards__foreign-title">chet el fuqarolari va fuqaroligi bo’lmagan shaxslar</div>
                     <div class="centercards__foreign-hamburger">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <div class="centercards__foreign-text">ro'yhatdan o'tgan</div>
-                    <div class="centercards__foreign-total">357 316</div>
-                    <img src="icons/centercards/foreign.svg" alt="foreign" class="centercards__foreign-img">
-                    <div class="centercards__foreign-chart">
-                        <canvas id="myChart1"></canvas>
-                    </div>
-                    <div class="centercards__foreign-descr1">
-                        Vaqtincha
-                    </div>
-                    <div class="centercards__foreign-descr2">
-                        Doimiy
-                    </div>
+                    <canvas id="myChart1"></canvas>
                 </div>
-                <div class="centercards__byarea">
+                <div class="centercards__byarea centercards__foreign">
                     <div class="centercards__byarea-title">hududlar bo'yicha</div>
                     <div class="centercards__byarea-hamburger">
                         <span></span>
@@ -250,7 +239,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/reg.js"></script>
 </body>
 
 </html>

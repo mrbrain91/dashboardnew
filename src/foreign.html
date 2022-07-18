@@ -21,8 +21,8 @@
             <div class="leftbar__divider"></div>
             <ul class="menu">
                 <li class="menu__item"><a href="index.html"><img src="icons/leftbar/report.svg" alt="report"></a></li>
-                <li class="menu__item active"><img src="icons/leftbar/idcard.svg" alt="idcard"></li>
-                <li class="menu__item"><a href="foreign.html"><img src="icons/leftbar/passport.svg" alt="passport"></a></li>
+                <li class="menu__item"><a href="id.html"><img src="icons/leftbar/idcard.svg" alt="idcard"></a></li>
+                <li class="menu__item active"><a href="foreign.html"><img src="icons/leftbar/passport.svg" alt="passport"></a></li>
                 <a href="accrem.html">
                     <li class="menu__item "><img src="icons/leftbar/citizen-in.svg" alt="citizen-in"></li>
                     <li class="menu__item"><img src="icons/leftbar/citizen-out.svg" alt="citizen-out"></li>
@@ -59,10 +59,10 @@
                 <input type="text" placeholder="IZLASH" class="filter__search" >
             </form>
             <div class="maincards">
-                <div class="maincards__id maincards__id-active">
+                <div class="maincards__id">
                     <div class="maincards__id-title">id kartalar</div>
                     <div class="maincards__id-center">
-                        <img src="icons/maincards/id-white.svg" alt="id" class="maincards__id-img">
+                        <img src="icons/maincards/id.svg" alt="id" class="maincards__id-img">
                         <div class="maincards__id-count">964 888</div>
                     </div>
                     <div class="maincards__id-arrow">
@@ -71,10 +71,10 @@
                     </div>
                   
                 </div>
-                <div class="maincards__id">
+                <div class="maincards__id maincards__id-active">
                     <div class="maincards__id-title maincards__id-title-2">Xorijga chiqish biometrik passporti</div>
                     <div class="maincards__id-center">
-                        <img src="icons/maincards/pass.svg" alt="id" class="maincards__id-img">
+                        <img src="icons/maincards/pass-white.svg" alt="id" class="maincards__id-img">
                         <div class="maincards__id-count">2 917 917</div>
                     </div>
                     <div class="maincards__id-arrow">
@@ -123,109 +123,89 @@
                 </div>
             </div>
             <div class="centercards">
-                <div class="centercards__idbytype">
-                   <div class="centercards__idbytype-title">id kartalar turlari bo’yicha</div>
-                   <div class="centercards__idbytype-wrapper">
-                        <div class="centercards__idbytype-chart">
-                            <div class="centercards__idbytype-chart-labels">
-                                <div class="centercards__idbytype-chart-labels-item">
-                                    <div class="centercards__idbytype-chart-labels-item-div"></div>
-                                    <div class="centercards__idbytype-chart-labels-item-descr">O’zbekiston Respublikasi fuqarolari </div>
-                                    <div class="centercards__idbytype-chart-labels-item-count">161 123</div>
-                                </div>
-                                <div class="centercards__idbytype-chart-labels-item">
-                                    <div class="centercards__idbytype-chart-labels-item-div"></div>
-                                    <div class="centercards__idbytype-chart-labels-item-descr">Fuqarolikka qabul qilingan shaxslar</div>
-                                    <div class="centercards__idbytype-chart-labels-item-count">3 267</div>
-                                </div>
-                                <div class="centercards__idbytype-chart-labels-item">
-                                    <div class="centercards__idbytype-chart-labels-item-div"></div>
-                                    <div class="centercards__idbytype-chart-labels-item-descr">Fuqaroligi bo’lmagan shaxslar</div>
-                                    <div class="centercards__idbytype-chart-labels-item-count">1 767</div>
-                                </div>
-                                <div class="centercards__idbytype-chart-labels-item">
-                                    <div class="centercards__idbytype-chart-labels-item-div"></div>
-                                    <div class="centercards__idbytype-chart-labels-item-descr">Xorijiy fuqarolar uchun</div>
-                                    <div class="centercards__idbytype-chart-labels-item-count">2 753</div>
-                                </div>
+                <div class="centercards__red">
+                   <div class="centercards__red-title">horijga chiqish biometrik<br> pasporti turlari bo’yicha</div>
+                   <div class="centercards__red-wrapper">
+                        <div class="centercards__red-chart">
+                            <div class="centercards__red-chart-item">
+                                <canvas id="myChart1" width="120" height="120"> </canvas>
                             </div>
-                            <div class="centercards__idbytype-chart-canvas">
-                                 <canvas id="myChart1"></canvas>
+                            <div class="centercards__red-chart-item">
+                                <canvas id="myChart12" width="120" height="120"> </canvas>
                             </div>
-                           
                         </div>
-                        <div class="centercards__idbytype-divider"></div>
-                        <div class="centercards__idbytype-reports">
-                            <div class="centercards__idbytype-reports-item centercards__idbytype-reports-item-1">
-                                <img src="icons/centercards/application.svg" alt="check" class="centercards__idbytype-reports-item-img">
-                                <!-- <div class="centercards__idbytype-reports-item-divider"></div> -->
+                        <div class="centercards__red-divider"></div>
+                        <div class="centercards__red-reports">
+                            <div class="centercards__red-reports-item centercards__red-reports-item-1">
+                                <img src="icons/centercards/application.svg" alt="check" class="centercards__red-reports-item-img">
+                                <!-- <div class="centercards__red-reports-item-divider"></div> -->
                                 <div>
-                                    <div class="centercards__idbytype-reports-item-title">Shakllantrilgan talabnomalar</div>
-                                    <div class="centercards__idbytype-reports-item-count">682 026</div>
+                                    <div class="centercards__red-reports-item-title">Shakllantrilgan talabnomalar</div>
+                                    <div class="centercards__red-reports-item-count">682 026</div>
                                 </div>
                             </div>
-                            <div class="centercards__idbytype-reports-item">
-                                <img src="icons/centercards/payment-waiting.svg" alt="payment-waiting" class="centercards__idbytype-reports-item-img">
-                                <!-- <div class="centercards__idbytype-reports-item-divider"></div> -->
+                            <div class="centercards__red-reports-item">
+                                <img src="icons/centercards/payment-waiting.svg" alt="payment-waiting" class="centercards__red-reports-item-img">
+                                <!-- <div class="centercards__red-reports-item-divider"></div> -->
                                 <div>
-                                    <div class="centercards__idbytype-reports-item-title">Tekshiruvda</div>
-                                    <div class="centercards__idbytype-reports-item-count">8 021</div>
+                                    <div class="centercards__red-reports-item-title">Tekshiruvda</div>
+                                    <div class="centercards__red-reports-item-count">8 021</div>
                                 </div>
                             </div>
-                            <div class="centercards__idbytype-reports-item">
-                                <img src="icons/centercards/check.svg" alt="check" class="centercards__idbytype-reports-item-img">
-                                <!-- <div class="centercards__idbytype-reports-item-divider"></div> -->
+                            <div class="centercards__red-reports-item">
+                                <img src="icons/centercards/check.svg" alt="check" class="centercards__red-reports-item-img">
+                                <!-- <div class="centercards__red-reports-item-divider"></div> -->
                                 <div>
-                                    <div class="centercards__idbytype-reports-item-title">Tekshiruvda</div>
-                                    <div class="centercards__idbytype-reports-item-count">8 021</div>
+                                    <div class="centercards__red-reports-item-title">Tekshiruvda</div>
+                                    <div class="centercards__red-reports-item-count">8 021</div>
                                 </div>
                             </div>
-                            <div class="centercards__idbytype-reports-item">
-                                <img src="icons/centercards/personalization.svg" alt="personalization" class="centercards__idbytype-reports-item-img">
-                                <!-- <div class="centercards__idbytype-reports-item-divider"></div> -->
+                            <div class="centercards__red-reports-item">
+                                <img src="icons/centercards/personalization.svg" alt="personalization" class="centercards__red-reports-item-img">
+                                <!-- <div class="centercards__red-reports-item-divider"></div> -->
                                 <div>
-                                    <div class="centercards__idbytype-reports-item-title">Personalizatsiya</div>
-                                    <div class="centercards__idbytype-reports-item-count">88</div>
+                                    <div class="centercards__red-reports-item-title">Personalizatsiya</div>
+                                    <div class="centercards__red-reports-item-count">88</div>
                                 </div>
                             </div>
-                            <div class="centercards__idbytype-reports-item">
-                                <img src="icons/centercards/search.svg" alt="search" class="centercards__idbytype-reports-item-img">
-                                <!-- <div class="centercards__idbytype-reports-item-divider"></div> -->
+                            <div class="centercards__red-reports-item">
+                                <img src="icons/centercards/search.svg" alt="search" class="centercards__red-reports-item-img">
+                                <!-- <div class="centercards__red-reports-item-divider"></div> -->
                                 <div>
-                                    <div class="centercards__idbytype-reports-item-title">Qidiruv</div>
-                                    <div class="centercards__idbytype-reports-item-count">8</div>
+                                    <div class="centercards__red-reports-item-title">Qidiruv</div>
+                                    <div class="centercards__red-reports-item-count">8</div>
                                 </div>
                             </div>
-                            <div class="centercards__idbytype-reports-item">
-                                <img src="icons/centercards/check.svg" alt="check" class="centercards__idbytype-reports-item-img">
-                                <!-- <div class="centercards__idbytype-reports-item-divider"></div> -->
+                            <div class="centercards__red-reports-item">
+                                <img src="icons/centercards/check.svg" alt="check" class="centercards__red-reports-item-img">
+                                <!-- <div class="centercards__red-reports-item-divider"></div> -->
                                 <div>
-                                    <div class="centercards__idbytype-reports-item-title">bekor bo’lgan talabnomalar</div>
-                                    <div class="centercards__idbytype-reports-item-count">15</div>
+                                    <div class="centercards__red-reports-item-title">bekor bo’lgan talabnomalar</div>
+                                    <div class="centercards__red-reports-item-count">15</div>
                                 </div>
                             </div>
-                            <div class="centercards__idbytype-reports-item">
-                                <img src="icons/centercards/finger.svg" alt="check" class="centercards__idbytype-reports-item-img">
-                                <!-- <div class="centercards__idbytype-reports-item-divider"></div> -->
+                            <div class="centercards__red-reports-item">
+                                <img src="icons/centercards/finger.svg" alt="check" class="centercards__red-reports-item-img">
+                                <!-- <div class="centercards__red-reports-item-divider"></div> -->
                                 <div>
-                                    <div class="centercards__idbytype-reports-item-title">EKBM</div>
-                                    <div class="centercards__idbytype-reports-item-count">45</div>
+                                    <div class="centercards__red-reports-item-title">EKBM</div>
+                                    <div class="centercards__red-reports-item-count">45</div>
                                 </div>
                             </div>
-                            <div class="centercards__idbytype-reports-item">
-                                <img src="icons/centercards/check.svg" alt="check" class="centercards__idbytype-reports-item-img">
-                                <!-- <div class="centercards__idbytype-reports-item-divider"></div> -->
+                            <div class="centercards__red-reports-item">
+                                <img src="icons/centercards/check.svg" alt="check" class="centercards__red-reports-item-img">
+                                <!-- <div class="centercards__red-reports-item-divider"></div> -->
                                 <div>
-                                    <div class="centercards__idbytype-reports-item-title">Tayyor berilgan</div>
-                                    <div class="centercards__idbytype-reports-item-count">6741</div>
+                                    <div class="centercards__red-reports-item-title">Tayyor berilgan</div>
+                                    <div class="centercards__red-reports-item-count">6741</div>
                                 </div>
                             </div>
-                            <div class="centercards__idbytype-reports-item">
-                                <img src="icons/centercards/verify.svg" alt="check" class="centercards__idbytype-reports-item-img">
-                                <!-- <div class="centercards__idbytype-reports-item-divider"></div> -->
+                            <div class="centercards__red-reports-item">
+                                <img src="icons/centercards/verify.svg" alt="check" class="centercards__red-reports-item-img">
+                                <!-- <div class="centercards__red-reports-item-divider"></div> -->
                                 <div>
-                                    <div class="centercards__idbytype-reports-item-title">DPM</div>
-                                    <div class="centercards__idbytype-reports-item-count">45</div>
+                                    <div class="centercards__red-reports-item-title">DPM</div>
+                                    <div class="centercards__red-reports-item-count">45</div>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +226,7 @@
                     <canvas height="100" id="myChart3"></canvas>
                 </div>
                 <div class="bottomcards__nonamebar">
-                    <canvas  height="100" id="myChart4"></canvas>
+                    <!-- <canvas  height="100" id="myChart6"></canvas> -->
                 </div>
                 
             </div>
@@ -257,7 +237,7 @@
     <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
-    <script src="js/id.js"></script>
+    <script src="js/foreign.js"></script>
 </body>
 
 </html>

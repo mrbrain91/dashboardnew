@@ -37,6 +37,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &-accrem {
+            flex-direction: column;
+            border: none;
+            border-left: 3px  #0085FF solid;
+            background: rgba(0, 0, 0, 0.26);
+            height: 70px;
+        }
     }    
     .active {
         border: none;
