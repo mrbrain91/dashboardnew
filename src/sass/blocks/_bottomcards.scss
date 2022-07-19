@@ -611,7 +611,156 @@
 
         }
     }
+    &__bysex {
+        position: relative;
+        width: 574px;
+        height: 184px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 5px rgba(47, 103, 245, 0.1);
+        border-radius: 3px;
+        &-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            width: 274px;
+            height: 12px;
+            background: linear-gradient(270.2deg, #0008CB 24.29%, #0085FF 73.8%);
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 10px;    
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 1;
+        }
+        &-hamburger {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 7px;
+            height: 5px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+
+            span {
+                display: block;
+                width: 7px;
+                height: 1px;
+                background: #1B24FF;
+                border-radius: 3px;
+            }
+        }
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-chart1 {
+            width: 104px;
+            height: 173px;
+            &-item {
+                width: 104px;
+                height: 51px;
+                display: flex;
+                align-items: center;
+            }
+            &-title {
+                width: 51px;
+                height: 51px;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                font-size: 8px;
+                line-height: 51px;
+                text-align: right;
+                text-transform: uppercase;
+                color: #3061E0;
+            }
+            &-canvas {
+                position: relative;
+                width: 28px;
+                height: 36px;
+                display: flex;
+                &-divider {
+                    position: absolute;
+                    height: 27px;
+                    width: 1px;
+                    background-color: black;
+                    margin-left: 6px;
+                }
+            }
+            &-count {
+                width: 19px;
+                height: 23px;
+                font-family: 'Roboto';
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 11px;
+                text-align: right;
+                letter-spacing: 0.05em;
+                color: #3061E0;
+                span {
+                    font-family: 'Roboto';
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 11px;
+                    text-align: right;
+                    letter-spacing: 0.05em;
+                    color: #EC7D17;
+                }
+               
+
+            }
+            &-labels {
+                display: flex;
+                justify-content:space-around;
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 10px;
+                color: #3061E0;
+                &-man {
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: 4px;
+                        height: 1px;
+                        background: #107CE0;
+                        border-radius: 2px;
+                        margin-bottom: 2px;
+                        margin-right: 2px;
+                    }
+                }
+                &-woman {
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: 4px;
+                        height: 1px;
+                        background: #EC7D17;
+                        border-radius: 2px;
+                        margin-bottom: 2px;
+                        margin-right: 2px;
+                    }
+                }
+            }
+        }
+        &-chart2 {
+            width: 470px;
+            height: 173px;
+            &-chart {
+                margin-top: 12px;
+                height: 160px;
+            }
+                // float: right;
+            }
+        }
 }
+
 
 
 .loading {
